@@ -189,7 +189,7 @@ const LazyAppBarSearch = defineAsyncComponent(() =>
       v-if="appContentLayoutNav === 'vertical'"
       class="d-none d-md-flex align-center text-disabled"
     >
-      <span class="me-3">Webinar</span>
+      <span class="me-3">Search keyword, department, webinar, stundent…</span>
       <span class="meta-key">&#8984;K</span>
     </span>
   </div>
