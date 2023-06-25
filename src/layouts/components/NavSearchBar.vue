@@ -1,161 +1,177 @@
 <script setup>
-import axios from '@axios'
-import { useThemeConfig } from '@core/composable/useThemeConfig'
+import axios from "@axios";
+import { useThemeConfig } from "@core/composable/useThemeConfig";
 
-const { appContentLayoutNav } = useThemeConfig()
+const { appContentLayoutNav } = useThemeConfig();
 
-defineOptions({ inheritAttrs: false })
+defineOptions({ inheritAttrs: false });
 
 // 👉 Is App Search Bar Visible
-const isAppSearchBarVisible = ref(false)
+const isAppSearchBarVisible = ref(false);
 
 // 👉 Default suggestions
 const suggestionGroups = [
   {
-    title: 'Popular Searches',
+    title: "Sistem Informasi",
     content: [
       {
-        icon: 'tabler-chart-donut',
-        title: 'Analytics',
-        url: { name: 'dashboards-analytics' },
+        icon: "tabler-chart-donut",
+        title: "Growth mindset in Digital Era",
+        url: { name: "dashboards-analytics" },
       },
       {
-        icon: 'tabler-chart-bubble',
-        title: 'CRM',
-        url: { name: 'dashboards-crm' },
+        icon: "tabler-chart-donut",
+        title: "How to Make a Notion for College Students",
+        url: { name: "dashboards-analytics" },
       },
       {
-        icon: 'tabler-file',
-        title: 'Invoice List',
-        url: { name: 'apps-invoice-list' },
+        icon: "tabler-chart-donut",
+        title:
+          "Design Thinking Processfor Product and Service Planning by UI/UX Designer",
+        url: { name: "dashboards-analytics" },
       },
       {
-        icon: 'tabler-users',
-        title: 'User List',
-        url: { name: 'apps-user-list' },
+        icon: "tabler-chart-donut",
+        title: "The key of profitable digital marketing",
+        url: { name: "dashboards-analytics" },
+      },
+    ],
+  },
+
+  {
+    title: "Teknologi Informasi",
+    content: [
+      {
+        icon: "tabler-chart-donut",
+        title:
+          "Harnessing the Power of Information Technology for Business Transformation",
+        url: { name: "dashboards-analytics" },
+      },
+      {
+        icon: "tabler-chart-donut",
+        title:
+          "Blockchain Technology: Revolutionizing Data Security and Trust in the Information Technology Landscape",
+        url: { name: "dashboards-analytics" },
+      },
+      {
+        icon: "tabler-chart-donut",
+        title:
+          "Cybersecurity in the Age of Digital Transformation: Safeguarding Information Technology Infrastructure and Data",
+        url: { name: "dashboards-analytics" },
       },
     ],
   },
   {
-    title: 'Apps & Pages',
+    title: "Agribisnis",
     content: [
       {
-        icon: 'tabler-calendar',
-        title: 'Calendar',
-        url: { name: 'apps-calendar' },
+        icon: "tabler-chart-donut",
+        title:
+          "Agribusiness in the Digital Era: Innovations, Challenges, and Opportunities",
+        url: { name: "dashboards-analytics" },
       },
       {
-        icon: 'tabler-file-plus',
-        title: 'Invoice Add',
-        url: { name: 'apps-invoice-add' },
-      },
-      {
-        icon: 'tabler-currency-dollar',
-        title: 'Pricing',
-        url: { name: 'pages-pricing' },
-      },
-      {
-        icon: 'tabler-user',
-        title: 'Account Settings',
-        url: {
-          name: 'pages-account-settings-tab',
-          params: { tab: 'account' },
-        },
+        icon: "tabler-chart-donut",
+        title:
+          "The Role of Agribusiness in Food Security and Economic Development",
+        url: { name: "dashboards-analytics" },
       },
     ],
   },
   {
-    title: 'User Interface',
+    title: "Matematika",
     content: [
       {
-        icon: 'tabler-letter-a',
-        title: 'Typography',
-        url: { name: 'pages-typography' },
+        icon: "tabler-chart-donut",
+        title:
+          "The Beauty and Power of Mathematics: Exploring the Wonders of Numbers and Patterns",
+        url: { name: "dashboards-analytics" },
       },
       {
-        icon: 'tabler-square',
-        title: 'Tabs',
-        url: { name: 'components-tabs' },
-      },
-      {
-        icon: 'tabler-hand-click',
-        title: 'Buttons',
-        url: { name: 'components-button' },
-      },
-      {
-        icon: 'tabler-keyboard',
-        title: 'Statistics',
-        url: { name: 'pages-cards-card-statistics' },
+        icon: "tabler-chart-donut",
+        title:
+          "Applications of Mathematics in Real-World Scenarios: From Engineering to Finance",
+        url: { name: "dashboards-analytics" },
       },
     ],
   },
   {
-    title: 'Popular Searches',
+    title: "Biologi",
     content: [
       {
-        icon: 'tabler-list',
-        title: 'Select',
-        url: { name: 'forms-select' },
+        icon: "tabler-chart-donut",
+        title:
+          "Unraveling the Mysteries of Life: Exploring the Frontiers of Biology",
+        url: { name: "dashboards-analytics" },
       },
       {
-        icon: 'tabler-space',
-        title: 'Combobox',
-        url: { name: 'forms-combobox' },
-      },
-      {
-        icon: 'tabler-calendar',
-        title: 'Date & Time Picker',
-        url: { name: 'forms-date-time-picker' },
-      },
-      {
-        icon: 'tabler-hexagon',
-        title: 'Rating',
-        url: { name: 'forms-rating' },
+        icon: "tabler-chart-donut",
+        title:
+          "Biology and Human Health: Understanding the Interplay for Better Medical Solutions",
+        url: { name: "dashboards-analytics" },
       },
     ],
   },
-]
+  {
+    title: "Fisika",
+    content: [
+      {
+        icon: "tabler-chart-donut",
+        title:
+          "Exploring the Quantum Frontier: Webinar on the Fundamentals and Applications of Modern Physics",
+        url: { name: "dashboards-analytics" },
+      },
+      {
+        icon: "tabler-chart-donut",
+        title:
+          "Physics in Everyday Life: Discovering the Marvels of the Universe through Webinar Sessions",
+        url: { name: "dashboards-analytics" },
+      },
+    ],
+  },
+];
 
 // 👉 No Data suggestion
 const noDataSuggestions = [
   {
-    title: 'Analytics Dashboard',
-    icon: 'tabler-shopping-cart',
-    url: { name: 'dashboards-analytics' },
+    icon: "tabler-chart-donut",
+    title: "Growth mindset in Digital Era",
+    url: { name: "dashboards-analytics" },
   },
   {
-    title: 'Account Settings',
-    icon: 'tabler-user',
-    url: {
-      name: 'pages-account-settings-tab',
-      params: { tab: 'account' },
-    },
+    icon: "tabler-chart-donut",
+    title: "How to Make a Notion for College Students",
+    url: { name: "dashboards-analytics" },
   },
   {
-    title: 'Pricing Page',
-    icon: 'tabler-cash',
-    url: { name: 'pages-pricing' },
+    icon: "tabler-chart-donut",
+    title: "Immune System and Standard of Nutritional Adequacy",
+    url: { name: "dashboards-analytics" },
   },
-]
+];
 
-const searchQuery = ref('')
-const searchResult = ref([])
-const router = useRouter()
+const searchQuery = ref("");
+const searchResult = ref([]);
+const router = useRouter();
 
 // 👉 fetch search result API
 watchEffect(() => {
-  axios.get('/app-bar/search', { params: { q: searchQuery.value } }).then(response => {
-    searchResult.value = response.data
-  })
-})
+  axios
+    .get("/app-bar/search", { params: { q: searchQuery.value } })
+    .then((response) => {
+      searchResult.value = response.data;
+    });
+});
 
-const redirectToSuggestedOrSearchedPage = selected => {
-  router.push(selected.url)
-  isAppSearchBarVisible.value = false
-  searchQuery.value = ''
-}
+const redirectToSuggestedOrSearchedPage = (selected) => {
+  router.push(selected.url);
+  isAppSearchBarVisible.value = false;
+  searchQuery.value = "";
+};
 
-const LazyAppBarSearch = defineAsyncComponent(() => import('@core/components/AppBarSearch.vue'))
+const LazyAppBarSearch = defineAsyncComponent(() =>
+  import("@core/components/AppBarSearch.vue")
+);
 </script>
 
 <template>
@@ -165,23 +181,15 @@ const LazyAppBarSearch = defineAsyncComponent(() => import('@core/components/App
     @click="isAppSearchBarVisible = !isAppSearchBarVisible"
   >
     <!-- 👉 Search Trigger button -->
-    <VBtn
-      icon
-      variant="text"
-      color="default"
-      size="small"
-    >
-      <VIcon
-        icon="tabler-search"
-        size="24"
-      />
+    <VBtn icon variant="text" color="default" size="small">
+      <VIcon icon="tabler-search" size="24" />
     </VBtn>
 
     <span
       v-if="appContentLayoutNav === 'vertical'"
       class="d-none d-md-flex align-center text-disabled"
     >
-      <span class="me-3">Search</span>
+      <span class="me-3">Webinar</span>
       <span class="meta-key">&#8984;K</span>
     </span>
   </div>

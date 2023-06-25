@@ -38,6 +38,7 @@ const logout = () => {
       color="primary"
       variant="tonal"
     >
+    <v-img cover :src="userData.avatar"></v-img>
     <VIcon
     size="20"
     icon="tabler-user"
@@ -53,6 +54,7 @@ const logout = () => {
         <VList>
           <!-- 👉 User Avatar & Name -->
           <VListItem>
+          
             <template #prepend>
               <VListItemAction start>
                 <VBadge
@@ -65,6 +67,7 @@ const logout = () => {
                   <VAvatar
                     color="primary"
                     variant="tonal"
+                    :image="userData.avatar"
                   >
                   <VIcon
                     size="20"
@@ -79,7 +82,7 @@ const logout = () => {
             <VListItemTitle class="font-weight-semibold">
               {{ userData.fullName }}
             </VListItemTitle>
-            <VListItemSubtitle>{{ userData.role }}</VListItemSubtitle>
+            <VListItemSubtitle class="text-capitalize">{{ userData.status }}</VListItemSubtitle>
           </VListItem>
 
           <VDivider class="my-2" />
