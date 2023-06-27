@@ -1,11 +1,19 @@
 import mock from "@/@fake-db/mock";
+import himsiPng from "@images/logos/himsi.png";
+import himatikaPng from "@images/logos/himatika.png";
+import himtiPng from "@images/logos/himti.png";
+import himbioPng from "@images/logos/himbio.png";
+import hitamPng from "@images/logos/hitam.png";
+import himafiPng from "@images/logos/himafi.png";
+import hmjPng from "@images/logos/hmj.png";
+import himkaPng from "@images/logos/himka.png";
 
 const database = [
   {
     title:
       "ASAH KARIER (AKAR): IMPROVE PROFESSIONALISM TO REACH DREAM IN THE WORLD OF DIGITAL MARKETING",
     subtitle: "Himpunan Mahasiswa Teknik Informatika (HIMTI)",
-    img: "/src/assets/images/logos/himti.png",
+    img: himtiPng,
     tags: ["seminar"],
     text: `<p>Era digital semakin berkembang, membuat banyak peluang kerja digital, salah satunya Digital Martketing. pada pelatihan ini akan membahas mengenai”
     </p>
@@ -34,7 +42,7 @@ const database = [
     title:
       "Quality Control : Basic Understanding of Quality Control concepts and practical application",
     subtitle: "Himpunan Mahasiswa Biologi (Oryza Sativa)",
-    img: "/src/assets/images/logos/himbio.png",
+    img: himbioPng,
     tags: ["seminar"],
     text: `<p>Quality Control Basic Understanding of Quality Control concepts and practical application akan dibahas dalam seminar ini bersama:”</p>
     <lu>
@@ -56,7 +64,7 @@ const database = [
   {
     title: "RAPAT AKBAR 2 X CONTROLLING BESAR",
     subtitle: "Himpunan Mahasiswa Matematika (HIMATIKA)",
-    img: "/src/assets/images/logos/himatika.png",
+    img: himatikaPng,
     tags: ["seminar"],
     text: `<p>Sebelum habis masa kepengurusan, Rapat Akbar 2 bersama Controlling Besar yang dilaksanakan di kepengurusan kabinet quantum akan mengadakan kegiatan bersama. Ayo kita ramaikan sebelum mulai masa-masa UAS.” </p>`,
     text2: `<p>Tanggal/Waktu: Sabtu, 10 Desember 2022 / 13.30 - Selesai</p>
@@ -67,7 +75,7 @@ const database = [
   {
     title: "SEMINAR NASIONAL HARI TANI KE-62",
     subtitle: "Himpunan Mahasiswa Agribisnis (HMJ)",
-    img: "/src/assets/images/logos/hmj.png",
+    img: hmjPng,
     tags: ["seminar"],
     text: `<p>Seminar Nasional Hari Tani ke-62 yang bertema Eksplorasi Potensi Gen Z terhadap Pertanian Menuju Indonesia Emas 2045, bersama:
     </p>
@@ -91,7 +99,7 @@ const database = [
   {
     title: "We're looking for virtual Intership Content Creator",
     subtitle: "Baroteradigital - Content Creator",
-    img: "/src/assets/images/logos/himsi.png",
+    img: himsiPng,
     tags: ["intership"],
     text: `<p>Persyaratan</p>
               <ul>
@@ -129,7 +137,7 @@ const database = [
     title: "🌟INTERNSHIP SEASON 5🌟 (Periode Maret - September 2023)",
     subtitle: "Himpunan Mahasiswa Syarif Hidayatullah Jakarta ",
     tags: ["intership"],
-    img: "/src/assets/images/logos/himsi.png",
+    img: himsiPng,
     text: `<p>Adapun posisi tersedia dalam divisi:</p>
               <p>
                 🗃 Administration   📊 Data Specialist   🗓 Project Management  🫂 Public Relation  📱 Social Media Creative
@@ -184,7 +192,7 @@ const database = [
   },
   {
     title: "MOBILE LEGEND : BANG BANG THAMUZ TOURNAMENT UINJKTESPORT",
-    img: "/src/assets/images/logos/himsi.png",
+    img: himsiPng,
     subtitle: "TOURNAMENT UINJKTESPORT",
     tags: ["lomba"],
     text: `<p>💎💎 PRIZEPOOL UP TO 6000 💎💎</p>   
@@ -226,7 +234,7 @@ const database = [
     title: `FUTURE AND CAREER TALKS - EKONOMI KREATIF DAN CREATIVE INDUSTRY`,
     subtitle: `Himpunan Mahasiswa Teknik Informatika (HIMTI)`,
     tags: ["scholarship", "home"],
-    img: "/src/assets/images/logos/himti.png",
+    img: himtiPng,
     text: `<p>Yuk daftar dan ikuti Kuliah Umum & Talkshow Creative Industry bertema “One Step To Recognize Your Potential, Towards Disruptive Innovation In Achieving A Bright Future”
       </p>
       <p>
@@ -254,7 +262,7 @@ const database = [
   {
     title: "Writing Competition (Lomba Karya Tulis Agri-Informatika",
     subtitle: "Himpunan Mahasiswa Sistem Informasi (HIMSI)",
-    img: "/src/assets/images/logos/himsi.png",
+    img: himsiPng,
     tags: ["lomba", "seminarwebinar", "home"],
     text: `<p>✨ Hadiah ✨</p>
               <p>
@@ -309,7 +317,7 @@ const database = [
     title:
       "Quality Control : Basic Understanding of Quality Control concepts and practical application",
     subtitle: "Himpunan Mahasiswa Biologi (Oryza Sativa)",
-    img: "/src/assets/images/logos/himbio.png",
+    img: himbioPng,
     tags: ["seminar", "home"],
     text: `<p>Quality Control Basic Understanding of Quality Control concepts and practical application akan dibahas dalam seminar ini bersama:”</p>
               <lu>
@@ -331,7 +339,7 @@ const database = [
   {
     title: "Pre Job Training IKALBIO UIN Jakarta",
     subtitle: "Himpunan Mahasiswa Biologi (HIMBIO)",
-    img: "/src/assets/images/logos/himbio.png",
+    img: himbioPng,
     tags: ["workshop"],
     text: `<p>Yuk ikutan Pre Job Training IKALBIO UIN Jakarta!!</p>
       <p>
@@ -355,7 +363,7 @@ const database = [
   {
     title: "SEMEN (Seminar Entrepreneurship)",
     subtitle: "Himpunan Mahasiswa Biologi (HIMBIO)",
-    img: "/src/assets/images/logos/himbio.png",
+    img: himbioPng,
     tags: ["workshop", "seminar"],
     text: `<p>Buat kalian yang berminat untuk jadi entrepreneur karena disini kita akan mulai berkenalan dengan ilmu-ilmu kewirausahaan yang akan dipaparkan oleh pemateri kece:</p>
       <p><b>
@@ -398,7 +406,7 @@ const database = [
   {
     title: 'MEKANIKA 2022 "Berjuta Cerita Dalam Satu Keluarga"',
     subtitle: "Himpunan Mahasiswa Fisika (HIMAFI)",
-    img: "/src/assets/images/logos/himafi.png",
+    img: himafiPng,
     tags: ["workshop"],
     text: `<p>Mekanika (Mengenal Keluarga Fisika) adalah kegiatan untuk para Mahasiswa aktif serta Alumni Fisika untuk lebih mengenal satu sama lain dan mempererat silaturahmi. Nah, seru banget nih jadi bisa dapat banyak ilmu tentang dunia pekerjaan dari para Kakak-kakak Alumni kita.</p>
       <p>
@@ -425,9 +433,8 @@ const database = [
   {
     title: `FUTURE AND CAREER TALKS - EKONOMI KREATIF DAN CREATIVE INDUSTRY`,
     subtitle: `Himpunan Mahasiswa Teknik Informatika (HIMTI)`,
-    img: "/src/assets/images/logos/himti.png",
+    img: himtiPng,
     tags: ["scholarship"],
-    img: "/src/assets/images/logos/himti.png",
     text: `<p>Yuk daftar dan ikuti Kuliah Umum & Talkshow Creative Industry bertema “One Step To Recognize Your Potential, Towards Disruptive Innovation In Achieving A Bright Future”
       </p>
       <p>
@@ -455,7 +462,7 @@ const database = [
   {
     title: `Pre Job Training IKALBIO UIN Jakarta`,
     subtitle: `Himpunan Mahasiswa Biologi (Oryza Sativa)`,
-    img: "/src/assets/images/logos/himbio.png",
+    img: himbioPng,
     tags: ["scholarship"],
     text: `<p>Bagi Mahasiswa semester 7-8, Mahasiswa yang menjalani skripsi, dan Mahasiswa fresh graduated ikut pelatihan yang bertema Sukses Menembus Dunia Kerja yang sangat bermanfaat untuk dunia kerja bersama ahli yang berpengalaman.”
       </p>`,
@@ -468,7 +475,7 @@ const database = [
   {
     title: `Training Organization 2022`,
     subtitle: `Himpunan Mahasiswa Matematika (HIMATIKA)`,
-    img: "/src/assets/images/logos/himatika.png",
+    img: himatikaPng,
     tags: ["scholarship"],
     text: `<p>"Training Organization 2022: Tingkatkan Potensi Diri dan Sukses di Dunia Kerja dengan Mengembangkan Soft Skill yang Anda Butuhkan!"
       </p>
@@ -486,7 +493,7 @@ const database = [
   {
     title: `PORTOFOLIO BY SKILVUL`,
     subtitle: `Himpunan Mahasiswa Sistem Informasi (HIMSI)`,
-    img: "/src/assets/images/logos/himsi.png",
+    img: himsiPng,
     tags: ["scholarship"],
     text: `<p>Daftar sekarang dan bangun portfolio UI/UX Design menarik dari tantangan langsung Bank Jago!
       </p>
