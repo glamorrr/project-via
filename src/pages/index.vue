@@ -8,7 +8,7 @@
               <VCardItem>
                 <div class="d-flex align-center">
                   <VAvatar class="me-3">
-                    <VImg :src="avatar1" />
+                    <VImg :src="data.img" />
                   </VAvatar>
                   <div class="title">
                     <VCardTitle>{{ data.title }}</VCardTitle>
@@ -67,7 +67,6 @@
 
 <script setup>
 import axios from "@axios";
-import avatar1 from "@images/avatars/ava-si-3.png";
 
 const tag = ref("home");
 const searchQuery = ref("");
